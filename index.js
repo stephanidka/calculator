@@ -15,10 +15,15 @@ function getDiff(){
     alert (`Из ${diff1} вычесть ${diff2} будет ${diff1 - diff2}`);
 }
 
-function getDiv(){
-    let div1 = prompt('Делимое')
-    let div2 = prompt('Делитель')
-    alert (`${div1} разделить на ${div2} будет ${div1 / div2}`);
+function getDiv() {
+    let div1 = prompt('Делимое');
+    let div2 = prompt('Делитель');
+        if (div2 === "0") {
+        alert("На ноль делить нельзя");
+        } 
+        else {
+        alert(`${div1} разделить на ${div2} будет ${div1 / div2}`);
+        }
 }
 
 function getMult(){
